@@ -1,0 +1,36 @@
+body{
+    background-image: url('images/b4051967-406e-4ce4-8f1d-7d3fdbafe77b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+  
+}
+.imagesPlayer{
+    width: 40px;
+    height: 40px;
+   
+}
+
+.imagetransparant{
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    position: absolute;
+    left: 27%;
+}
+.charaters{
+    position: relative;
+    top:400px;
+    left:425px;
+   
+}
+.charaters2{
+   position: relative;
+   top:442px;
+   left:77px;
+}
+
+
+
