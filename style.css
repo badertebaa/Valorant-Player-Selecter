@@ -1,16 +1,15 @@
 body{
-    background-image: url('images/b4051967-406e-4ce4-8f1d-7d3fdbafe77b.jpg');
+    background-image: url('images/valorant_selection_background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     display: flex;
-  
 }
+
 .imagesPlayer{
     width: 40px;
     height: 40px;
-   
 }
 
 .imagetransparant{
@@ -31,6 +30,3 @@ body{
    top:442px;
    left:77px;
 }
-
-
-
