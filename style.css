@@ -1,32 +1,61 @@
-body{
-    background-image: url('images/valorant_selection_background.png');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('assets/images/valorant_selection_background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     display: flex;
-}
 
-.imagesPlayer{
-    width: 40px;
-    height: 40px;
-}
-
-.imagetransparant{
-    width: 500px;
-    height: 500px;
-    z-index: -1;
-    position: absolute;
-    left: 27%;
-}
-.charaters{
     position: relative;
-    top:400px;
-    left:425px;
-   
 }
-.charaters2{
-   position: relative;
-   top:442px;
-   left:77px;
+
+.agentIcon {
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid #ffffff50;
+}
+
+.selected-agent
+{
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.selected-agent img {
+    height: 96vh;
+    margin-top: 2vh;
+
+    position: absolute;
+    z-index: -1;
+}
+
+/* Table */
+.selection-table
+{
+    width: 100%;
+    margin-top: calc(88vh - 52px);
+
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2px;
+}
+
+td img{
+    display: flex;
+    cursor: pointer;
 }
