@@ -13,6 +13,9 @@ body {
 
     position: relative;
 }
+.agentIcon:hover{
+ background-color: #ffffff50;
+}
 
 .agentIcon {
     width: 52px;
