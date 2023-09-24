@@ -2,43 +2,52 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valorant select player</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Player Selector</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="selected-agent">
+        <img id="selectedAgent" src="assets/images/agents/killjoy.png" alt="selected agent">
+    </div>
 
-  <div class="selectedcharacters">
-    <img src="images/omenbg.png" alt="" class="imagetransparant" id="imagebg">
-  </div>
+    <div class="selection-table">
+      <table>
+        <tr>
+          <td><img id="agent-astra" class="agentIcon"  src="assets/images/agents_icon/astra.png"    alt="" /></td>
+          <td><img id="agent-breach" class="agentIcon"  src="assets/images/agents_icon/breach.png" alt="" /></td>
+          <td><img id="agent-brimstone" class="agentIcon"  src="assets/images/agents_icon/brimstone.png"    alt="" /></td>
+          <td><img id="agent-chambre" class="agentIcon"  src="assets/images/agents_icon/chambre.png"    alt="" /></td>
+          <td><img id="agent-cypher" class="agentIcon"  src="assets/images/agents_icon/cypher.png" alt="" /></td>
+          <td><img id="agent-deadlock" class="agentIcon"  src="assets/images/agents_icon/deadlock.png"    alt="" /></td>
+          <td><img id="agent-fade" class="agentIcon"  src="assets/images/agents_icon/fade.png"    alt="" /></td>
+          <td><img id="agent-gekko" class="agentIcon"  src="assets/images/agents_icon/gekko.png" alt="" /></td>
+          <td><img id="agent-harbor" class="agentIcon"  src="assets/images/agents_icon/harbor.png"    alt="" /></td>
+          <td><img id="agent-jett" class="agentIcon" src="assets/images/agents_icon/jett.png"    alt="" /></td>
+          <td><img id="agent-kayo" class="agentIcon" src="assets/images/agents_icon/kayo.png"    alt="" /></td>
+        </tr>
+        <tr>
+          <td><img id="agent-killjoy" class="agentIcon" src="assets/images/agents_icon/killjoy.png"    alt="" /></td>
+          <td><img id="agent-neon" class="agentIcon" src="assets/images/agents_icon/neon.png"    alt="" /></td>
+          <td><img id="agent-omen" class="agentIcon" src="assets/images/agents_icon/omen.png" alt="" /></td>
+          <td><img id="agent-phoenix" class="agentIcon" src="assets/images/agents_icon/phoenix.png"    alt="" /></td>
+          <td><img id="agent-raze" class="agentIcon" src="assets/images/agents_icon/raze.png"    alt="" /></td>
+          <td><img id="agent-reyna" class="agentIcon" src="assets/images/agents_icon/reyna.png" alt="" /></td>
+          <td><img id="agent-sage" class="agentIcon" src="assets/images/agents_icon/sage.png"    alt="" /></td>
+          <td><img id="agent-skye" class="agentIcon" src="assets/images/agents_icon/skye.png"    alt="" /></td>
+          <td><img id="agent-sova" class="agentIcon" src="assets/images/agents_icon/sova.png"    alt="" /></td>
+          <td><img id="agent-viper" class="agentIcon" src="assets/images/agents_icon/viper.png" alt="" /></td>
+          <td><img id="agent-yoru" class="agentIcon" src="assets/images/agents_icon/yoru.png" alt="" /></td>
+        </tr>
+      </table>
+    </div>
 
-  <div class="charaters">
-    <img src="images/omen.PNG" alt="" id="img1" class="imagesPlayer">
-    <img src="images/sova.PNG" alt="" id="img2" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img3" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img4" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img5" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img6" class="imagesPlayer">
-    <img src="images/killjoy.PNG" alt="" id="img7" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img8" class="imagesPlayer">
+    <audio autoplay loop>
+      <source src="assets/audios/valorant_music.mp3" type="audio/mp3" />
+    </audio>
 
-  </div>
-  <div class="charaters2">
-    <img src="images/omen.PNG" alt="" id="img9" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img10" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img11" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img12" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img13" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img14" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img15" class="imagesPlayer">
-    <img src="images/omen.PNG" alt="" id="img16" class="imagesPlayer">
-
-  </div>
-
-  <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>

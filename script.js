@@ -1,66 +1,31 @@
-img1=document.getElementById("img1");
-img2=document.getElementById("img2");
-img3=document.getElementById("img3");
-img4=document.getElementById("img4");
-img5=document.getElementById("img5");
-img6=document.getElementById("img6");
-img7=document.getElementById("img7");
-img8=document.getElementById("img8");
-img9=document.getElementById("img9");
-img10=document.getElementById("img10");
-img11=document.getElementById("img11");
-img12=document.getElementById("img12");
-img13=document.getElementById("img13");
-img14=document.getElementById("img14");
-img15=document.getElementById("img15");
-img16=document.getElementById("img16");
+const agents = ["astra", 
+                "breach", 
+                "brimstone", 
+                "chambre", 
+                "cypher",
+                "deadlock", 
+                "fade", 
+                "gekko", 
+                "harbor", 
+                "jett", 
+                "kayo", 
+                "killjoy", 
+                "neon", 
+                "omen", 
+                "phoenix", 
+                "raze", 
+                "reyna", 
+                "sage", 
+                "skye", 
+                "sova", 
+                "viper", 
+                "yoru"]
 
-img1.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img2.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/sovabgtransparant.png");
-});
-img3.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img4.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img5.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img6.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img7.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/Killjoybg.png");
-});
-img8.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img9.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img10.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img11.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img12.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img13.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img14.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img15.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
-img16.addEventListener("click",()=>{
-    document.getElementById("imagebg").setAttribute("src","images/omenbg.png");
-});
+const selectAgent = document.getElementById("selectedAgent")
 
+agents.forEach(agent => {
+    agentSelectImage=document.getElementById("agent-"+agent);
+    agentSelectImage.addEventListener("click",()=>{
+        selectAgent.setAttribute("src","assets/images/agents/"+agent+".png");
+    });
+});
