@@ -13,15 +13,15 @@ body {
 
     position: relative;
 }
-.agentIcon:hover{
- background-color: #ffffff50;
-}
 
 .agentIcon {
     width: 52px;
     height: 52px;
 
     border: 1px solid #ffffff50;
+}
+.agentIcon:hover{
+ background-color: #ffffff50;
 }
 
 .selected-agent
@@ -31,6 +31,7 @@ body {
 
     display: flex;
     justify-content: center;
+   
 }
 .selected-agent img {
     height: 96vh;
@@ -48,6 +49,8 @@ body {
 
     display: flex;
     justify-content: center;
+    position: relative;
+    left: 90px;
 }
 
 table {
@@ -61,4 +64,67 @@ td {
 td img{
     display: flex;
     cursor: pointer;
+}
+.icon-Abilities{
+    width: 50px;
+    height: 50px;
+}
+.agent-information{
+    position: relative;
+    right: 70px;
+    top: 60px;
+    
+}
+#role-name{
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgb(220, 220, 119);
+}
+.abilities-table{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+.abilities-table tr td{
+    border: solid 1px rgb(168, 167, 167);
+    color: white;
+    text-align: center;
+    
+    
+   
+}
+.abilities{
+  
+    width: 50px;
+    height: 50px;
+    border-collapse: collapse;
+}
+#agent-name{
+    font-size: 50px;
+    margin-bottom: 12px;
+    color: rgb(220, 220, 119);
+}
+#Info-titleagent{
+    color: black;
+}
+.abilities-img{
+    width: 50px;
+    height: 50px;
+}
+#player-and-abilities-info{
+    width: 280px;
+    margin-top:5px;
+    font-size: 13px;
+    color:  rgb(220, 220, 119);
+}
+#mini-title-role-player{
+   
+    letter-spacing: 2px;
+    color: aliceblue;
+   
+}
+#role-text{
+    width: 260px;
+    margin-top:5px;
+    font-size: 13px;
+    color: aliceblue;
 }
