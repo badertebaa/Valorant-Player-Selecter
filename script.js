@@ -96,7 +96,7 @@ function getAgentId(id) {
           document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[2].description;
         })
         document.getElementById("Abilitie4").addEventListener("click",()=>{
-          document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[3].description;
+          document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[3].description
         })
       
     }
