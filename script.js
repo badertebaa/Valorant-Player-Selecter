@@ -44,6 +44,7 @@ function getAgentId(id) {
   
   function updatePlayerInfo(data,id) {
     if(id!="ded3520f-4264-bfed-162d-b080e2abccf9"){
+    document.getElementById("player-and-abilities-info").style.display="block";
     const roleNameElement = document.getElementById("role-name");
     roleNameElement.innerHTML = data.data.role.displayName;
     document.getElementById("agent-name").innerHTML=data.data.displayName;
@@ -83,6 +84,7 @@ function getAgentId(id) {
 
     }
     else{
+      document.getElementById("player-and-abilities-info").style.display="block";
       document.getElementById("role-name").innerHTML="Initiator"
       document.getElementById("agent-name").innerHTML="Sova";
       document.getElementById("info-player").setAttribute("src","https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png");
