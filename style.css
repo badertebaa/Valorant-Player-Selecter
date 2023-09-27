@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+.abilities-img:hover{
+    background-color: rgb(176, 176, 176);
+}
 
 body {
     background-image: url('assets/images/valorant_selection_background.png');
