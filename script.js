@@ -56,19 +56,29 @@ function getAgentId(id) {
     document.getElementById("mini-title-role-player").innerHTML=data.data.role.displayName;
     document.getElementById("role-text").innerHTML=data.data.role.description;
     document.getElementById("info-player").addEventListener("click",()=>{
-    document.getElementById("player-and-abilities-info").innerHTML=data.data.description;
+    document.getElementById("player-and-abilities-info").style.display="block";
+    document.getElementById("mini-title-role-player").innerHTML=data.data.role.displayName;
+    document.getElementById("role-text").innerHTML=data.data.role.description;
     })
     document.getElementById("Abilitie1").addEventListener("click",()=>{
-      document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[1].description;
+      document.getElementById("player-and-abilities-info").style.display="none";
+      document.getElementById("role-text").innerHTML=data.data.abilities[1].description;
+      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[1].displayName;
     })
     document.getElementById("Abilitie2").addEventListener("click",()=>{
-      document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[0].description;
+      document.getElementById("player-and-abilities-info").style.display="none";
+      document.getElementById("role-text").innerHTML=data.data.abilities[0].description;
+      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[0].displayName;
     })
     document.getElementById("Abilitie3").addEventListener("click",()=>{
-      document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[2].description;
+      document.getElementById("player-and-abilities-info").style.display="none";
+      document.getElementById("role-text").innerHTML=data.data.abilities[2].description;
+      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[2].displayName;
     })
     document.getElementById("Abilitie4").addEventListener("click",()=>{
-      document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[3].description;
+      document.getElementById("player-and-abilities-info").style.display="none";
+      document.getElementById("role-text").innerHTML=data.data.abilities[3].description;
+      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[3].displayName;
     })
 
     }
@@ -84,19 +94,29 @@ function getAgentId(id) {
       document.getElementById("mini-title-role-player").innerHTML="Initiator";
       document.getElementById("role-text").innerHTML="Initiators challenge angles by setting up their team to enter contested ground and push defenders away.";
       document.getElementById("info-player").addEventListener("click",()=>{
-        document.getElementById("player-and-abilities-info").innerHTML=data.data.description;
+        document.getElementById("mini-title-role-player").innerHTML="Initiator";
+        document.getElementById("player-and-abilities-info").style.display="block";
+        document.getElementById("role-text").innerHTML="Initiators challenge angles by setting up their team to enter contested ground and push defenders away.";
         })
         document.getElementById("Abilitie1").addEventListener("click",()=>{
-          document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[1].description;
+          document.getElementById("player-and-abilities-info").style.display="none";
+          document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[1].displayName;
+          document.getElementById("role-text").innerHTML=data.data.abilities[1].description;
         })
         document.getElementById("Abilitie2").addEventListener("click",()=>{
-          document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[0].description;
+          document.getElementById("player-and-abilities-info").style.display="none";
+          document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[0].displayName;
+          document.getElementById("role-text").innerHTML=data.data.abilities[0].description;
         })
         document.getElementById("Abilitie3").addEventListener("click",()=>{
-          document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[2].description;
+          document.getElementById("player-and-abilities-info").style.display="none";
+          document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[2].displayName;
+          document.getElementById("role-text").innerHTML=data.data.abilities[2].description;
         })
         document.getElementById("Abilitie4").addEventListener("click",()=>{
-          document.getElementById("player-and-abilities-info").innerHTML=data.data.abilities[3].description
+          document.getElementById("player-and-abilities-info").style.display="none";
+          document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[3].displayName;
+          document.getElementById("role-text").innerHTML=data.data.abilities[3].description;
         })
       
     }
@@ -106,6 +126,3 @@ function getAgentId(id) {
     selectAgent.setAttribute("src","assets/images/agents/"+"yoru"+".png");
     getAgentId("7f94d92c-4234-0a36-9646-3a87eb8b5c89");
 })
-
-
-
