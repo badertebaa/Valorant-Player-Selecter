@@ -2,82 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorant Player Selector</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Player Selector</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="selected-agent">
-        <img id="selectedAgent" src="assets/images/agents/yoru.png" alt="selected agent">
-    </div>
+  <div class="selected-agent">
+    <img id="selectedAgent" src="assets/images/agents/yoru.png" alt="selected agent">
+  </div>
 
-    <div class="selection-table">
-      <table>
-        <tr>
-          <td id="agent-astra"><img class="agentIcon"  src="assets/images/agents_icon/astra.png"    alt="" /></td>
-          <td id="agent-breach"><img class="agentIcon"  src="assets/images/agents_icon/breach.png" alt="" /></td>
-          <td id="agent-brimstone"><img class="agentIcon"  src="assets/images/agents_icon/brimstone.png"    alt="" /></td>
-          <td id="agent-chambre"><img class="agentIcon"  src="assets/images/agents_icon/chambre.png"    alt="" /></td>
-          <td id="agent-cypher"><img class="agentIcon"  src="assets/images/agents_icon/cypher.png" alt="" /></td>
-          <td id="agent-deadlock"><img class="agentIcon"  src="assets/images/agents_icon/deadlock.png"    alt="" /></td>
-          <td id="agent-fade"><img class="agentIcon"  src="assets/images/agents_icon/fade.png"    alt="" /></td>
-          <td id="agent-gekko"><img class="agentIcon"  src="assets/images/agents_icon/gekko.png" alt="" /></td>
-          <td id="agent-harbor"><img class="agentIcon"  src="assets/images/agents_icon/harbor.png"    alt="" /></td>
-          <td id="agent-jett"><img class="agentIcon" src="assets/images/agents_icon/jett.png"    alt="" /></td>
-          <td id="agent-kayo"><img class="agentIcon" src="assets/images/agents_icon/kayo.png"    alt="" /></td>
-        </tr>
-        <tr>
-          <td id="agent-killjoy"><img class="agentIcon" src="assets/images/agents_icon/killjoy.png"    alt="" /></td>
-          <td id="agent-neon"><img class="agentIcon" src="assets/images/agents_icon/neon.png"    alt="" /></td>
-          <td id="agent-omen"><img class="agentIcon" src="assets/images/agents_icon/omen.png" alt="" /></td>
-          <td id="agent-phoenix"><img class="agentIcon" src="assets/images/agents_icon/phoenix.png"    alt="" /></td>
-          <td id="agent-raze"><img class="agentIcon" src="assets/images/agents_icon/raze.png"    alt="" /></td>
-          <td id="agent-reyna"><img class="agentIcon" src="assets/images/agents_icon/reyna.png" alt="" /></td>
-          <td id="agent-sage"><img class="agentIcon" src="assets/images/agents_icon/sage.png"    alt="" /></td>
-          <td id="agent-skye"><img class="agentIcon" src="assets/images/agents_icon/skye.png"    alt="" /></td>
-          <td id="agent-sova"><img class="agentIcon" src="assets/images/agents_icon/sova.png"    alt="" /></td>
-          <td id="agent-viper"><img class="agentIcon" src="assets/images/agents_icon/viper.png" alt="" /></td>
-          <td id="agent-yoru"><img class="agentIcon" src="assets/images/agents_icon/yoru.png" alt="" /></td>
-        </tr>
-      </table>
-    </div>
-
-
-    <div class="agent-information">
-      <span id="role-name">INITIATOR</span>
-      <br>
-      <br>
-     <h1 id="agent-name" >KAY/O</h1>
-     
-     <table class="abilities-table">
+  <div class="selection-table">
+    <table>
       <tr>
-        <td class="abilities" ><span id="Info-titleagent">INFO</span></td>
+        <td id="agent-astra"><img class="agentIcon" src="assets/images/agents_icon/astra.png" alt="" /></td>
+        <td id="agent-breach"><img class="agentIcon" src="assets/images/agents_icon/breach.png" alt="" /></td>
+        <td id="agent-brimstone"><img class="agentIcon" src="assets/images/agents_icon/brimstone.png" alt="" /></td>
+        <td id="agent-chambre"><img class="agentIcon" src="assets/images/agents_icon/chambre.png" alt="" /></td>
+        <td id="agent-cypher"><img class="agentIcon" src="assets/images/agents_icon/cypher.png" alt="" /></td>
+        <td id="agent-deadlock"><img class="agentIcon" src="assets/images/agents_icon/deadlock.png" alt="" /></td>
+        <td id="agent-fade"><img class="agentIcon" src="assets/images/agents_icon/fade.png" alt="" /></td>
+        <td id="agent-gekko"><img class="agentIcon" src="assets/images/agents_icon/gekko.png" alt="" /></td>
+        <td id="agent-harbor"><img class="agentIcon" src="assets/images/agents_icon/harbor.png" alt="" /></td>
+        <td id="agent-jett"><img class="agentIcon" src="assets/images/agents_icon/jett.png" alt="" /></td>
+        <td id="agent-kayo"><img class="agentIcon" src="assets/images/agents_icon/kayo.png" alt="" /></td>
+      </tr>
+      <tr>
+        <td id="agent-killjoy"><img class="agentIcon" src="assets/images/agents_icon/killjoy.png" alt="" /></td>
+        <td id="agent-neon"><img class="agentIcon" src="assets/images/agents_icon/neon.png" alt="" /></td>
+        <td id="agent-omen"><img class="agentIcon" src="assets/images/agents_icon/omen.png" alt="" /></td>
+        <td id="agent-phoenix"><img class="agentIcon" src="assets/images/agents_icon/phoenix.png" alt="" /></td>
+        <td id="agent-raze"><img class="agentIcon" src="assets/images/agents_icon/raze.png" alt="" /></td>
+        <td id="agent-reyna"><img class="agentIcon" src="assets/images/agents_icon/reyna.png" alt="" /></td>
+        <td id="agent-sage"><img class="agentIcon" src="assets/images/agents_icon/sage.png" alt="" /></td>
+        <td id="agent-skye"><img class="agentIcon" src="assets/images/agents_icon/skye.png" alt="" /></td>
+        <td id="agent-sova"><img class="agentIcon" src="assets/images/agents_icon/sova.png" alt="" /></td>
+        <td id="agent-viper"><img class="agentIcon" src="assets/images/agents_icon/viper.png" alt="" /></td>
+        <td id="agent-yoru"><img class="agentIcon" src="assets/images/agents_icon/yoru.png" alt="" /></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div class="agent-information">
+    <span id="role-name">INITIATOR</span>
+    <h1 id="agent-name">KAY/O</h1>
+
+    <table class="abilities-table">
+      <tr>
+        <td class="abilities">INFO</td>
         <td class="abilities">E</td>
         <td class="abilities">Q</td>
         <td class="abilities">C</td>
         <td class="abilities">X</td>
       </tr>
       <tr>
-        <td class="abilities" ><img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" alt="" class="abilities-img"id="info-player"></td>
-        <td class="abilities"><img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability1/displayicon.png" alt="" class="abilities-img"id="Abilitie1"></td>
-        <td class="abilities"><img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png" alt="" class="abilities-img" id="Abilitie2"></td>
+        <td class="abilities"><img
+            src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png"
+            alt="" class="abilities-img" id="info-player"></td>
+        <td class="abilities"><img
+            src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability1/displayicon.png"
+            alt="" class="abilities-img" id="Abilitie1"></td>
+        <td class="abilities"><img
+            src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png"
+            alt="" class="abilities-img" id="Abilitie2"></td>
 
-      
-        <td class="abilities"><img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability2/displayicon.png" alt="" class="abilities-img"id="Abilitie3"></td>
-        <td class="abilities"><img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png" alt="" class="abilities-img"id="Abilitie4"></td>
+
+        <td class="abilities"><img
+            src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability2/displayicon.png"
+            alt="" class="abilities-img" id="Abilitie3"></td>
+        <td class="abilities"><img
+            src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png"
+            alt="" class="abilities-img" id="Abilitie4"></td>
       </tr>
-     </table>
-     <p id="player-and-abilities-info">KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities dismantles his opponents' capacity to fight back, securing him and his allies the ultimate edge.</p>
-     <p id="mini-title-role-player">INITIATOR</p>
-     <p id="role-text">Initiators challenge angles by setting up their team to enter contested ground and push defenders away.</p>
-    </div>
+    </table>
+    <p id="player-and-abilities-info"></p>
+    <p id="mini-title-role-player"></p>
+    <p id="role-text"></p>
+  </div>
 
-    <audio autoplay loop>
-      <source src="assets/audios/valorant_music.mp3" type="audio/mp3" />
-    </audio>
+  <audio autoplay loop>
+    <source src="assets/audios/valorant_music.mp3" type="audio/mp3" />
+  </audio>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
