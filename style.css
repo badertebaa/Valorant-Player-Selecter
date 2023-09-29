@@ -2,10 +2,6 @@
     padding: 0;
     margin: 0;
 }
-.abilities-img:hover{
-    background-color: rgb(176, 176, 176);
-   
-}
 
 body {
     background-image: url('assets/images/valorant_selection_background.png');
@@ -19,15 +15,12 @@ body {
 }
 
 .agentIcon {
-    width: 52px;
-    height: 52px;
-   
-
+    width: 4vw;
+    height: 4vw;
     border: 1px solid #ffffff50;
 }
-.agentIcon:hover{
- background-color: #ffffff50;
- border: 2px solid rgb(239, 239, 90);
+.agentIcon:hover {
+    background-color: #ffffff50;
 }
 
 .selected-agent
@@ -51,7 +44,7 @@ body {
 .selection-table
 {
     width: 100%;
-    margin-top: calc(88vh - 52px);
+    margin-top: calc(81vh - 4vw);
 
     display: flex;
     justify-content: center;
@@ -60,11 +53,8 @@ body {
 }
 
 table {
-    border-collapse: collapse;
-}
-
-td {
-    padding: 2px;
+    border-collapse: separate;
+    border-spacing: .4vw;
 }
 
 td img{
@@ -98,6 +88,11 @@ td img{
     
    
 }
+.abilities-img:hover{
+    background-color: rgb(176, 176, 176);
+   
+}
+
 .abilities{
   
     width: 50px;
