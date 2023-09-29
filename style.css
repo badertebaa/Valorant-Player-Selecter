@@ -3,7 +3,8 @@
     margin: 0;
 }
 .abilities-img:hover{
-    background-color: rgb(176, 176, 176)
+    background-color: rgb(176, 176, 176);
+   
 }
 
 body {
@@ -20,11 +21,13 @@ body {
 .agentIcon {
     width: 52px;
     height: 52px;
+   
 
     border: 1px solid #ffffff50;
 }
 .agentIcon:hover{
  background-color: #ffffff50;
+ border: 2px solid rgb(239, 239, 90);
 }
 
 .selected-agent
@@ -53,7 +56,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 90px;
+    left: 123px;
 }
 
 table {
