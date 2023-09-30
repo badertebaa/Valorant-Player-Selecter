@@ -60,44 +60,60 @@ function getAgentId(id) {
 }
 
 function updatePlayerInfo(data) {
-  document.getElementById("player-and-abilities-info").style.display = "block";
-  const roleNameElement = document.getElementById("role-name");
-  roleNameElement.innerText = data.data.role.displayName;
-  document.getElementById("agent-name").innerText = data.data.displayName;
-  document.getElementById("info-player").setAttribute("src", data.data.role.displayIcon);
-  document.getElementById("Abilitie1").setAttribute("src", data.data.abilities[1].displayIcon);
-  document.getElementById("Abilitie2").setAttribute("src", data.data.abilities[0].displayIcon);
-  document.getElementById("Abilitie3").setAttribute("src", data.data.abilities[2].displayIcon);
-  document.getElementById("Abilitie4").setAttribute("src", data.data.abilities[3].displayIcon);
-  document.getElementById("player-and-abilities-info").innerText = data.data.description;
-  document.getElementById("mini-title-role-player").innerText = data.data.role.displayName;
-  document.getElementById("role-text").innerText = data.data.role.description;
+  const agentName = document.getElementById("agent-name");
+  const roleName = document.getElementById("role-name");
+  const information = document.getElementById("player-and-abilities-info");
+  //Abilities Icons
+  const infoIcon = document.getElementById("info-player");
+  const abilitie1Icon = document.getElementById("Abilitie1");
+  const abilitie2Icon = document.getElementById("Abilitie2");
+  const abilitie3Icon = document.getElementById("Abilitie3");
+  const abilitie4Icon = document.getElementById("Abilitie4");
+  //Ability Information
+  const infoTitle = document.getElementById("mini-title-role-player");
+  const infoDescription = document.getElementById("role-text");
+
+  // Role and Agent Name
+  roleName.innerText = data.data.role.displayName;
+  agentName.innerText = data.data.displayName;
+  
+  infoIcon.setAttribute("src", data.data.role.displayIcon);
+  abilitie1Icon.setAttribute("src", data.data.abilities[1].displayIcon);
+  abilitie2Icon.setAttribute("src", data.data.abilities[0].displayIcon);
+  abilitie3Icon.setAttribute("src", data.data.abilities[2].displayIcon);
+  abilitie4Icon.setAttribute("src", data.data.abilities[3].displayIcon);
+  
+  information.innerText = data.data.description;
+  information.style.display = "block";
+
+  infoTitle.innerText = data.data.role.displayName;
+  infoDescription.innerText = data.data.role.description;
 
   // Events
-  document.getElementById("info-player").addEventListener("click", () => {
-    document.getElementById("player-and-abilities-info").style.display = "block";
-    document.getElementById("mini-title-role-player").innerText = data.data.role.displayName;
-    document.getElementById("role-text").innerText = data.data.role.description;
+  infoIcon.addEventListener("click", () => {
+    information.style.display = "block";
+    infoTitle.innerText = data.data.role.displayName;
+    infoDescription.innerText = data.data.role.description;
   })
-  document.getElementById("Abilitie1").addEventListener("click", () => {
-    document.getElementById("player-and-abilities-info").style.display = "none";
-    document.getElementById("role-text").innerText = data.data.abilities[1].description;
-    document.getElementById("mini-title-role-player").innerText = data.data.abilities[1].displayName;
+  abilitie1Icon.addEventListener("click", () => {
+    information.style.display = "none";
+    infoDescription.innerText = data.data.abilities[1].description;
+    infoTitle.innerText = data.data.abilities[1].displayName;
   })
-  document.getElementById("Abilitie2").addEventListener("click", () => {
-    document.getElementById("player-and-abilities-info").style.display = "none";
-    document.getElementById("role-text").innerText = data.data.abilities[0].description;
-    document.getElementById("mini-title-role-player").innerText = data.data.abilities[0].displayName;
+  abilitie2Icon.addEventListener("click", () => {
+    information.style.display = "none";
+    infoDescription.innerText = data.data.abilities[0].description;
+    infoTitle.innerText = data.data.abilities[0].displayName;
   })
-  document.getElementById("Abilitie3").addEventListener("click", () => {
-    document.getElementById("player-and-abilities-info").style.display = "none";
-    document.getElementById("role-text").innerText = data.data.abilities[2].description;
-    document.getElementById("mini-title-role-player").innerText = data.data.abilities[2].displayName;
+ abilitie3Icon.addEventListener("click", () => {
+    information.style.display = "none";
+    infoDescription.innerText = data.data.abilities[2].description;
+    infoTitle.innerText = data.data.abilities[2].displayName;
   })
-  document.getElementById("Abilitie4").addEventListener("click", () => {
-    document.getElementById("player-and-abilities-info").style.display = "none";
-    document.getElementById("mini-title-role-player").innerText = data.data.abilities[3].displayName;
-    document.getElementById("role-text").innerText = data.data.abilities[3].description;
+  abilitie4Icon.addEventListener("click", () => {
+    information.style.display = "none";
+    infoTitle.innerText = data.data.abilities[3].displayName;
+    infoDescription.innerText = data.data.abilities[3].description;
   })
 
   // Event listener for keyboard shortcuts
@@ -105,33 +121,33 @@ function updatePlayerInfo(data) {
     switch (event.key) {
       case "i":
       case "I":
-        document.getElementById("player-and-abilities-info").style.display = "block";
-        document.getElementById("mini-title-role-player").innerText = data.data.role.displayName;
-        document.getElementById("role-text").innerText = data.data.role.description;
+        information.style.display = "block";
+        infoTitle.innerText = data.data.role.displayName;
+        infoDescription.innerText = data.data.role.description;
         break;
       case "e":
       case "E":
-        document.getElementById("player-and-abilities-info").style.display = "none";
-        document.getElementById("role-text").innerText = data.data.abilities[1].description;
-        document.getElementById("mini-title-role-player").innerText = data.data.abilities[1].displayName;
+        information.style.display = "none";
+        infoDescription.innerText = data.data.abilities[1].description;
+        infoTitle.innerText = data.data.abilities[1].displayName;
         break;
       case "q":
       case "Q":
-        document.getElementById("player-and-abilities-info").style.display = "none";
-        document.getElementById("role-text").innerText = data.data.abilities[0].description;
-        document.getElementById("mini-title-role-player").innerText = data.data.abilities[0].displayName;
+        information.style.display = "none";
+        infoDescription.innerText = data.data.abilities[0].description;
+        infoTitle.innerText = data.data.abilities[0].displayName;
         break;
       case "c":
       case "C":
-        document.getElementById("player-and-abilities-info").style.display = "none";
-        document.getElementById("role-text").innerText = data.data.abilities[2].description;
-        document.getElementById("mini-title-role-player").innerText = data.data.abilities[2].displayName;
+        information.style.display = "none";
+        infoDescription.innerText = data.data.abilities[2].description;
+        infoTitle.innerText = data.data.abilities[2].displayName;
         break;
       case "x":
       case "X":
-        document.getElementById("player-and-abilities-info").style.display = "none";
-        document.getElementById("mini-title-role-player").innerText = data.data.abilities[3].displayName;
-        document.getElementById("role-text").innerText = data.data.abilities[3].description;
+        information.style.display = "none";
+        infoTitle.innerText = data.data.abilities[3].displayName;
+        infoDescription.innerText = data.data.abilities[3].description;
         break;
       default:
         // Do nothing for other keys
