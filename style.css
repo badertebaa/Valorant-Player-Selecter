@@ -80,6 +80,12 @@ td img {
     color: #fff;
 }
 
+#agent-name {
+    font-size: 50px;
+    margin-bottom: 25px;
+    color: rgb(220, 220, 119);
+}
+
 .abilities-table {
     font-size: 1vw;
     border-collapse: collapse;
@@ -122,11 +128,6 @@ td img {
     border-right: 3px solid #00000005;
 }
 
-#agent-name {
-    font-size: 50px;
-    margin-bottom: 12px;
-    color: rgb(220, 220, 119);
-}
 .abilities
 {
     color: white;
@@ -140,12 +141,13 @@ td img {
 
 #player-and-abilities-info {
     width: 280px;
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: 13px;
     color: rgb(220, 220, 119);
 }
 
 #mini-title-role-player {
+    margin-top: 15px;
     letter-spacing: 2px;
     color: aliceblue;
 }

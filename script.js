@@ -23,13 +23,25 @@ const agents = [{'name':"astra",'id':"41fb69c1-4189-7b37-f117-bcaf1e96f1bf"},
             ]
 
 const selectAgent = document.getElementById("selectedAgent")
+let previousAgentImage = null;
 
 agents.forEach(agent => {
-    agentSelectImage=document.getElementById("agent-"+agent.name);
-    agentSelectImage.addEventListener("click",()=>{
-        selectAgent.setAttribute("src","assets/images/agents/"+agent.name+".png");
-        getAgentId(agent.id)
-    });
+  agentSelectImage = document.getElementById("agent-" + agent.name);
+  agentSelectImage.addEventListener("click", (event) => {
+    // Remove border from the previously selected agent image, if exists
+    if (previousAgentImage) {
+      previousAgentImage.style.border = "1px solid #ffffff50";
+      previousAgentImage.querySelector('img').style.filter = "brightness(1)";
+    }
+    // Set border for the clicked agent image
+    event.currentTarget.style.border = "1px solid #EFEF5A";
+    event.currentTarget.querySelector('img').style.filter = "brightness(0.5)";
+    // Update the previousAgentImage to the current one
+    previousAgentImage = event.currentTarget;
+
+    selectAgent.setAttribute("src", "assets/images/agents/" + agent.name + ".png");
+    getAgentId(agent.id)
+  });
 });
 
 
