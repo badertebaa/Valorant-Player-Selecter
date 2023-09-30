@@ -43,10 +43,9 @@ function getAgentId(id) {
   }
   
   function updatePlayerInfo(data) {
-   
+    document.getElementById("player-and-abilities-info").style.display="block";
     const roleNameElement = document.getElementById("role-name");
     roleNameElement.innerHTML = data.data.role.displayName;
-    document.getElementById("player-and-abilities-info").style.display="block";
     document.getElementById("agent-name").innerHTML=data.data.displayName;
     document.getElementById("info-player").setAttribute("src",data.data.role.displayIcon);
     document.getElementById("Abilitie1").setAttribute("src",data.data.abilities[1].displayIcon);

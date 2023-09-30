@@ -1,10 +1,6 @@
-*{
+* {
     padding: 0;
     margin: 0;
-}
-.abilities-img:hover{
-    background-color: rgb(176, 176, 176);
-   
 }
 
 body {
@@ -19,26 +15,24 @@ body {
 }
 
 .agentIcon {
-    width: 52px;
-    height: 52px;
-   
-
+    width: 4vw;
+    height: 4vw;
     border: 1px solid #ffffff50;
 }
-.agentIcon:hover{
- background-color: #ffffff50;
- border: 2px solid rgb(239, 239, 90);
+
+.agentIcon:hover {
+    background-color: #ffffff50;
 }
 
-.selected-agent
-{
+.selected-agent {
     position: absolute;
     width: 100%;
 
     display: flex;
     justify-content: center;
-   
+
 }
+
 .selected-agent img {
     height: 96vh;
     margin-top: 2vh;
@@ -48,89 +42,90 @@ body {
 }
 
 /* Table */
-.selection-table
-{
+.selection-table {
     width: 100%;
-    margin-top: calc(88vh - 52px);
+    margin-top: calc(81vh - 4vw);
 
     display: flex;
     justify-content: center;
-    position: relative;
-    left: 123px;
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: .4vw;
 }
 
-td {
-    padding: 2px;
-}
-
-td img{
+td img {
     display: flex;
     cursor: pointer;
 }
-.icon-Abilities{
+
+/* Agent Information section */
+.agent-information {
+    position: absolute;
+    top: 15vh;
+    right: 5vw;
+}
+
+.icon-Abilities {
     width: 50px;
     height: 50px;
 }
-.agent-information{
-    position: relative;
-    right: 70px;
-    top: 60px;
-    
-}
-#role-name{
+
+#role-name {
     font-size: 15px;
     letter-spacing: 2px;
-    color: rgb(220, 220, 119);
+    color: #fff;
 }
-.abilities-table{
-    border: solid 1px;
+
+.abilities-table {
     border-collapse: collapse;
+    border: 1px solid #fff;
 }
-.abilities-table tr td{
-    border: solid 1px rgb(168, 167, 167);
-    color: white;
+
+.abilities-table td {
     text-align: center;
-    
-    
-   
+    color: white;
+    background-color: #ffffff20;
+    width: 5vw;
 }
-.abilities{
-  
+
+.abilities-img:hover {
+    background-color: rgb(176, 176, 176);
+}
+
+.abilities {
     width: 50px;
     height: 50px;
     border-collapse: collapse;
 }
-#agent-name{
+
+#agent-name {
     font-size: 50px;
     margin-bottom: 12px;
     color: rgb(220, 220, 119);
 }
-#Info-titleagent{
-    color: black;
-}
-.abilities-img{
+
+.abilities-img {
     width: 50px;
     height: 50px;
 }
-#player-and-abilities-info{
+
+#player-and-abilities-info {
     width: 280px;
-    margin-top:5px;
+    margin-top: 5px;
     font-size: 13px;
-    color:  rgb(220, 220, 119);
+    color: rgb(220, 220, 119);
 }
-#mini-title-role-player{
-   
+
+#mini-title-role-player {
     letter-spacing: 2px;
     color: aliceblue;
-   
 }
-#role-text{
+
+#role-text {
     width: 260px;
-    margin-top:5px;
+    margin-top: 5px;
     font-size: 13px;
     color: aliceblue;
 }
