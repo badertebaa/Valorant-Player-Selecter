@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+
+    font-family: sans-serif;
 }
 
 body {
@@ -73,31 +75,51 @@ td img {
 }
 
 #role-name {
-    font-size: 15px;
+    font-size: 1vw;
     letter-spacing: 2px;
     color: #fff;
 }
 
 .abilities-table {
+    font-size: 1vw;
     border-collapse: collapse;
-    border: 1px solid #fff;
+}
+
+.abilities-table tr:first-child{
+    border-bottom: 1px solid #ffffff80;
+}
+
+.abilities-table tr:first-child td{
+    height: 2.5vw;
+}
+
+/* Info td */
+.abilities-table tr:first-child td:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abilities-info
+{
+    height: 80%;
+    width: 90%;
+    background-color: #ffffff90;
+    display: flex;
+    align-items: center;
+}
+.abilities-info p
+{
+    color: #000;
+    flex: 1;
+    height: fit-content;
 }
 
 .abilities-table td {
-    text-align: center;
-    color: white;
     background-color: #ffffff20;
     width: 5vw;
-}
+    height: 3.5vw;
 
-.abilities-img:hover {
-    background-color: rgb(176, 176, 176);
-}
-
-.abilities {
-    width: 50px;
-    height: 50px;
-    border-collapse: collapse;
+    border-right: 3px solid #00000005;
 }
 
 #agent-name {
@@ -105,10 +127,15 @@ td img {
     margin-bottom: 12px;
     color: rgb(220, 220, 119);
 }
-
+.abilities
+{
+    color: white;
+    text-align: center;
+}
 .abilities-img {
-    width: 50px;
-    height: 50px;
+    width: 2.2vw;
+    height: 2.2vw;
+    margin: 0 auto;
 }
 
 #player-and-abilities-info {
