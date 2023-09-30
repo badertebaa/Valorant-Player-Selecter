@@ -22,6 +22,11 @@ const agents = [{'name':"astra",'id':"41fb69c1-4189-7b37-f117-bcaf1e96f1bf"},
                {'name':"sova","id":"320b2a48-4d9b-a075-30f1-1f93a9b638fa"}
             ]
 
+function getIdByName(agentName) {
+  const agent = agents.find(agent => agent.name === agentName);
+  return agent ? agent.id : null;
+}
+
 const selectAgent = document.getElementById("selectedAgent")
 let previousAgentImage = null;
 
@@ -98,6 +103,13 @@ function getAgentId(id) {
   }
 
   window.addEventListener("load",()=>{
-    selectAgent.setAttribute("src","assets/images/agents/"+"yoru"+".png");
-    getAgentId("7f94d92c-4234-0a36-9646-3a87eb8b5c89");
+    const defaultAgent = "yoru";
+    agentSelectImage = document.getElementById("agent-" + defaultAgent);
+    agentSelectImage.style.border = "1px solid #EFEF5A";
+    agentSelectImage.querySelector('img').style.filter = "brightness(0.5)";
+    previousAgentImage = agentSelectImage;
+
+    selectAgent.setAttribute("src","assets/images/agents/"+defaultAgent+".png");
+    const id = getIdByName(defaultAgent)
+    getAgentId(id);
 })
