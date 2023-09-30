@@ -76,7 +76,8 @@ td img {
 
 #role-name {
     font-size: 1vw;
-    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     color: #fff;
 }
 
@@ -140,21 +141,25 @@ td img {
 }
 
 #player-and-abilities-info {
-    width: 280px;
+    font-weight: bold;
+    font-size: 0.95vw;
+    width: 22vw;
     margin-top: 20px;
-    font-size: 13px;
     color: rgb(220, 220, 119);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #mini-title-role-player {
+    font-weight: bold;
+    text-transform: uppercase;
     margin-top: 15px;
-    letter-spacing: 2px;
     color: aliceblue;
 }
 
 #role-text {
-    width: 260px;
-    margin-top: 5px;
-    font-size: 13px;
+    font-size: 0.92vw;
+    width: 21vw; 
+    margin-top: 4px;
     color: aliceblue;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }

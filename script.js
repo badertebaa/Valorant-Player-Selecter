@@ -62,44 +62,41 @@ function getAgentId(id) {
   function updatePlayerInfo(data) {
     document.getElementById("player-and-abilities-info").style.display="block";
     const roleNameElement = document.getElementById("role-name");
-    roleNameElement.innerHTML = data.data.role.displayName;
-    document.getElementById("agent-name").innerHTML=data.data.displayName.toUpperCase();
+    roleNameElement.innerText = data.data.role.displayName;
+    document.getElementById("agent-name").innerText=data.data.displayName;
     document.getElementById("info-player").setAttribute("src",data.data.role.displayIcon);
     document.getElementById("Abilitie1").setAttribute("src",data.data.abilities[1].displayIcon);
     document.getElementById("Abilitie2").setAttribute("src",data.data.abilities[0].displayIcon);
     document.getElementById("Abilitie3").setAttribute("src",data.data.abilities[2].displayIcon);
     document.getElementById("Abilitie4").setAttribute("src",data.data.abilities[3].displayIcon);
-    document.getElementById("player-and-abilities-info").innerHTML=data.data.description;
-    document.getElementById("mini-title-role-player").innerHTML=data.data.role.displayName;
-    document.getElementById("role-text").innerHTML=data.data.role.description;
+    document.getElementById("player-and-abilities-info").innerText=data.data.description;
+    document.getElementById("mini-title-role-player").innerText=data.data.role.displayName;
+    document.getElementById("role-text").innerText=data.data.role.description;
     document.getElementById("info-player").addEventListener("click",()=>{
     document.getElementById("player-and-abilities-info").style.display="block";
-    document.getElementById("mini-title-role-player").innerHTML=data.data.role.displayName;
-    document.getElementById("role-text").innerHTML=data.data.role.description;
+    document.getElementById("mini-title-role-player").innerText=data.data.role.displayName;
+    document.getElementById("role-text").innerText=data.data.role.description;
     })
     document.getElementById("Abilitie1").addEventListener("click",()=>{
       document.getElementById("player-and-abilities-info").style.display="none";
-      document.getElementById("role-text").innerHTML=data.data.abilities[1].description;
-      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[1].displayName;
+      document.getElementById("role-text").innerText=data.data.abilities[1].description;
+      document.getElementById("mini-title-role-player").innerText=data.data.abilities[1].displayName;
     })
     document.getElementById("Abilitie2").addEventListener("click",()=>{
       document.getElementById("player-and-abilities-info").style.display="none";
-      document.getElementById("role-text").innerHTML=data.data.abilities[0].description;
-      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[0].displayName;
+      document.getElementById("role-text").innerText=data.data.abilities[0].description;
+      document.getElementById("mini-title-role-player").innerText=data.data.abilities[0].displayName;
     })
     document.getElementById("Abilitie3").addEventListener("click",()=>{
       document.getElementById("player-and-abilities-info").style.display="none";
-      document.getElementById("role-text").innerHTML=data.data.abilities[2].description;
-      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[2].displayName;
+      document.getElementById("role-text").innerText=data.data.abilities[2].description;
+      document.getElementById("mini-title-role-player").innerText=data.data.abilities[2].displayName;
     })
     document.getElementById("Abilitie4").addEventListener("click",()=>{
       document.getElementById("player-and-abilities-info").style.display="none";
-      document.getElementById("role-text").innerHTML=data.data.abilities[3].description;
-      document.getElementById("mini-title-role-player").innerHTML=data.data.abilities[3].displayName;
+      document.getElementById("mini-title-role-player").innerText=data.data.abilities[3].displayName;
+      document.getElementById("role-text").innerText=data.data.abilities[3].description;
     })
-
-    
-    
   }
 
   window.addEventListener("load",()=>{
