@@ -101,11 +101,6 @@ td img {
 }
 
 /* Info td */
-.abilities-table tr:first-child td:first-child{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .abilities-info
 {
     height: 80%;
@@ -116,7 +111,7 @@ td img {
 }
 .abilities-info p
 {
-    color: #000;
+    color: #fff;
     flex: 1;
     height: fit-content;
 }
@@ -134,6 +129,13 @@ td img {
     color: white;
     text-align: center;
 }
+
+.abilities span
+{
+    background-color: #ffffff80;
+    padding: 7px 16px;
+}
+
 .abilities-img {
     width: 2.2vw;
     height: 2.2vw;
